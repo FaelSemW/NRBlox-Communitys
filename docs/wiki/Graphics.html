@@ -1,0 +1,13 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'"><title>Gráficos, MSAA e FPS · NRBlox</title><link rel="stylesheet" href="wiki.css"></head><body><header><a class="brand" href="Home.html">N / NRBlox Community</a><a href="https://discord.gg/M8j8JnQSCx">Discord ↗</a></header><main><h1>Gráficos, MSAA e FPS</h1>
+<h2>MSAA até 8x</h2>
+<p>O seletor oferece Automático, 1x, 2x, 4x e 8x. A configuração usa FIntDebugForceMSAASamples. Automático remove a substituição, permitindo que o cliente escolha.</p>
+<p>8x solicita oito amostras; não comprova que o renderizador adotou esse valor. O resultado depende da versão do Roblox, da API gráfica e da GPU. MSAA aumenta o custo de renderização e pode reduzir FPS. Compare uma cena antes e depois, sem mudar outras opções.</p>
+<h2>Limite de FPS</h2>
+<p>O menu oficial do Roblox no Windows oferece ajuste de taxa de quadros até 240 FPS. Esse é o caminho documentado para o Player moderno: abra o menu da experiência, entre em Configurações e ajuste Taxa máxima de quadros.</p>
+<p>O preset avançado do NRBlox grava uma solicitação em DFIntTaskSchedulerTargetFps. A lista de FastFlags permitidas pelo Roblox pode ignorar essa flag. A opção experimental “Sem limite” não remove restrições do motor, do driver, de VSync ou do servidor e não é uma garantia de FPS ilimitado. Consulte o valor produzido no editor antes de aplicar.</p>
+<p>O NRBlox não altera memória, executável ou proteções do cliente para impor essas configurações.</p>
+<h2>Player, Studio e Linux</h2>
+<p>O Player aplica uma lista de flags permitidas. O Studio tem regras diferentes. No Linux, o Sober usa outro cliente e a gravação em seu campo fflags não comprova suporte à mesma configuração do Windows.</p>
+<h2>Fontes técnicas</h2>
+<ul><li><a href="https://devforum.roblox.com/t/allowlist-for-local-client-configuration-via-fast-flags/3966569/">Roblox: lista de FastFlags permitidas</a></li><li><a href="https://create.roblox.com/docs/performance-optimization/identify">Roblox: avaliação de desempenho e FPS</a></li><li><a href="https://vinegarhq.org/Sober/Configuration/index.html">Configuração do Sober</a></li></ul>
+<p><a href="Home.html">Voltar ao início</a></p></main><footer>Documentação NRBlox Community · Disponível offline</footer></body></html>
