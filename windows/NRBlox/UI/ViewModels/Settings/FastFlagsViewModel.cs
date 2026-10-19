@@ -62,8 +62,7 @@ namespace NRBlox.UI.ViewModels.Settings
         public IReadOnlyDictionary<string, string?> FrameratePresets { get; } = new Dictionary<string, string?>
         {
             { "Automático / Roblox", null }, { "60 FPS", "60" }, { "120 FPS", "120" },
-            { "144 FPS", "144" }, { "165 FPS", "165" }, { "240 FPS", "240" },
-            { "360 FPS", "360" }, { "Sem limite (experimental)", "0" }
+            { "144 FPS", "144" }, { "165 FPS", "165" }, { "240 FPS", "240" }
         };
 
         public string SelectedFramerate

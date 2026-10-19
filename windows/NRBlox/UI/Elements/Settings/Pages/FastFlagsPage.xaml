@@ -21,7 +21,7 @@
             <ui:ToggleSwitch IsChecked="{Binding UseFastFlagManager, Mode=TwoWay}" />
         </controls:OptionControl>
 
-        <controls:OptionControl Header="Limite de FPS (experimental)" Description="Solicita um limite via FastFlag. O Roblox Player atual pode ignorar esta opção, incluindo sem limite (valor 0). Use o menu do Roblox para limites suportados.">
+        <controls:OptionControl Header="Limite de FPS" Description="O cliente Roblox atual oferece oficialmente até 240 FPS. O NRBlox grava a preferência apenas quando o Roblox reconhecer a configuração; o menu do jogo continua sendo a fonte oficial.">
             <ComboBox Width="240" ItemsSource="{Binding FrameratePresets.Keys}" SelectedItem="{Binding SelectedFramerate, Mode=TwoWay}" />
         </controls:OptionControl>
 
@@ -31,7 +31,7 @@
         <controls:MarkdownTextBlock MarkdownText="{Binding Source={x:Static resources:Strings.Menu_FastFlags_Presets_D3DExclusiveFullscreenInfo}, Converter={StaticResource StringFormatConverter}, ConverterParameter='nrblox-wiki:home'}"  Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
 
         <controls:OptionControl 
-            Header="{x:Static resources:Strings.Menu_FastFlags_Presets_MSAA_Title}" Description="Até 8x solicitado ao motor. O resultado depende do renderizador e da GPU.">
+            Header="{x:Static resources:Strings.Menu_FastFlags_Presets_MSAA_Title}" Description="Até 8x. Esta flag é permitida pela configuração local do Roblox, mas o resultado depende do renderizador, da GPU e da versão do cliente.">
             <ComboBox Margin="5,0,0,0" Padding="10,5,10,5" Width="200" ItemsSource="{Binding MSAALevels.Keys, Mode=OneTime}" Text="{Binding SelectedMSAALevel, Mode=TwoWay}">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>

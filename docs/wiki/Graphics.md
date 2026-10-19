@@ -10,7 +10,7 @@ O seletor oferece Automático, 1x, 2x, 4x e 8x. A configuração usa FIntDebugFo
 
 O menu oficial do Roblox no Windows oferece ajuste de taxa de quadros até 240 FPS. Esse é o caminho documentado para o Player moderno: abra o menu da experiência, entre em Configurações e ajuste Taxa máxima de quadros.
 
-O preset avançado do NRBlox grava uma solicitação em DFIntTaskSchedulerTargetFps. A lista de FastFlags permitidas pelo Roblox pode ignorar essa flag. A opção experimental “Sem limite” não remove restrições do motor, do driver, de VSync ou do servidor e não é uma garantia de FPS ilimitado. Consulte o valor produzido no editor antes de aplicar.
+O NRBlox não oferece mais presets acima de 240 FPS. A flag DFIntTaskSchedulerTargetFps não está na allowlist local atual do Roblox e é ignorada pelo cliente; por isso não existe um desbloqueio infinito confiável por ClientAppSettings.json. Use o menu do Roblox para selecionar até 240 FPS.
 
 O NRBlox não altera memória, executável ou proteções do cliente para impor essas configurações.
 
