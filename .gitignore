@@ -2,7 +2,9 @@
 **/obj/
 **/.vs/
 release/
+release-v022/
 NRBlox-Communitys-*.exe
 SHA256SUMS.txt
+SHA256SUMS-v*.txt
 *.user
 *.suo
